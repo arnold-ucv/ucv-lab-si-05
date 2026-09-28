@@ -1,0 +1,26 @@
+[project]
+name = "lab5-metrics"
+version = "0.1.0"
+description = "laboratorio 05 de sistemas inteligentes"
+authors = [
+    {name = "ARNOLD VILLANUEVA",email = "avillanuevahu@ucvvirtual.edu.pe"}
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy (>=2.5.3,<3.0.0)",
+    "matplotlib (>=3.11.2,<4.0.0)",
+    "opencv-python (>=5.0.0.93,<6.0.0.0)",
+    "fastapi (>=0.141.1,<0.142.0)",
+    "uvicorn (>=0.53.0,<0.54.0)",
+    "python-multipart (>=0.0.32,<0.0.33)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)"
+]
